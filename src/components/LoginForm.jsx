@@ -21,7 +21,8 @@ function LoginForm(props) {
         setLoggedIn(true);
         navigate("/dashboard")
         toast.success("logged In")
-
+        console.log("printing the form data");
+        console.log(formData)
     }
   return (
     <form onSubmit={submithandler}>
