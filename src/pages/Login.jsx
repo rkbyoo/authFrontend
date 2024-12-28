@@ -1,14 +1,12 @@
 import React from 'react'
 import Template from '../components/Template'
-import loginImg from "../assets/login.png"
 
 function Login({setLoggedIn}) {
   return (
     <Template
     title="welcome Back"
-    desc1="build skills for,tomorrow and beyond."
-    desc2="Education to future-proof your carrer."
-    image={loginImg}
+    desc1="this is desc 1"
+    desc2="this is desc 2"
     formtype="login"
     setLoggedIn={setLoggedIn}
     />

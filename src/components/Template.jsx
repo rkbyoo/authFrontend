@@ -10,6 +10,7 @@ function Template({title,desc1,desc2,image,formtype,setLoggedIn}) {
         <h1>{title}</h1>
         <p>
             <span>{desc1}</span>
+            <br />
             <span>{desc2}</span>
         </p>
         {formtype==="signup"?(<SignupForm setLoggedIn={setLoggedIn}/>):(<LoginForm setLoggedIn={setLoggedIn}/>)}
@@ -23,7 +24,6 @@ function Template({title,desc1,desc2,image,formtype,setLoggedIn}) {
       </div>
       <div>
         <img src={frameImage} alt="pattern" width={558} height={504} loading='lazy' />
-        <img src={image} alt="" width={558} height={490} loading='lazy' />
       </div>
     </div>
   )
